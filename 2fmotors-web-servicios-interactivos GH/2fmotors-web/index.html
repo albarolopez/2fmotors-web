@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2F MOTORS, taller mecánico. Solicita una cita y cuéntanos qué necesita tu vehículo.">
+  <title>2F MOTORS | Taller mecánico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="2F MOTORS, inicio">
+      <img src="logo-2fmotors.png" alt="Logotipo de 2F MOTORS">
+      <span><strong>2F MOTORS</strong><small>TALLER MECÁNICO</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#servicios">Servicios</a>
+      <a href="#cita">Pedir cita</a>
+      <a href="#horario">Horario y ubicación</a>
+    </nav>
+    <a class="header-call" href="tel:+34687372411">Llamar al taller</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">MECÁNICA · MANTENIMIENTO · REPARACIÓN</p>
+        <h1>Tu coche.<br><span>Nuestra prioridad.</span></h1>
+        <p>Cuéntanos qué le ocurre a tu vehículo y solicita una cita con 2F MOTORS.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#cita">Solicitar una cita <span>↗</span></a>
+          <a class="button button-outline" href="https://maps.app.goo.gl/tAKYMumxyXHmTBmH8" target="_blank" rel="noopener">Cómo llegar</a>
+        </div>
+      </div>
+      <div class="hero-mark">2F <span>MOTORS</span></div>
+    </section>
+
+    <section class="intro section-wrap">
+      <p class="eyebrow">2F MOTORS</p>
+      <h2>Atención clara.<br><span>Trabajo bien hecho.</span></h2>
+      <p class="intro-copy">Cada vehículo tiene una historia. Explícanos qué notas, qué ruido escuchas o qué testigo se ha encendido para que podamos orientarte antes de la visita.</p>
+    </section>
+
+    <section class="services section-wrap" id="servicios">
+      <div class="section-heading">
+        <div><p class="eyebrow">QUÉ NECESITA TU COCHE</p><h2>Estamos aquí para ayudarte.</h2></div>
+        <p>Contacta con el taller para consultar disponibilidad y servicios.</p>
+      </div>
+      <div class="services-carousel" aria-label="Servicios del taller">
+        <button class="service-arrow" id="servicePrev" type="button" aria-label="Servicio anterior">‹</button>
+        <div class="service-track-window">
+          <div class="service-track" id="serviceTrack">
+            <article class="service-card"><span class="service-icon">01 / 04</span><h3>Mecánica general</h3><p>Cuéntanos los síntomas y te ayudaremos a identificar el siguiente paso.</p></article>
+            <article class="service-card"><span class="service-icon">02 / 04</span><h3>Mantenimiento</h3><p>Consulta las necesidades de mantenimiento y revisión de tu vehículo.</p></article>
+            <article class="service-card"><span class="service-icon">03 / 04</span><h3>Diagnosis</h3><p>Describe los avisos del cuadro o los fallos que has detectado.</p></article>
+            <article class="service-card"><span class="service-icon">04 / 04</span><h3>Chapa y pintura</h3><p>Consulta trabajos de carrocería, reparación estética y pintura del vehículo.</p></article>
+          </div>
+        </div>
+        <button class="service-arrow" id="serviceNext" type="button" aria-label="Servicio siguiente">›</button>
+        <div class="service-carousel-footer"><span id="serviceCounter">01 / 04</span><div class="service-dots" id="serviceDots" aria-label="Seleccionar servicio"><button type="button" aria-label="Servicio 1" class="active"></button><button type="button" aria-label="Servicio 2"></button><button type="button" aria-label="Servicio 3"></button><button type="button" aria-label="Servicio 4"></button></div></div>
+      </div>
+      <p class="small-note">Servicios mostrados a modo de orientación. Confirma con el taller qué trabajos realiza antes de acudir.</p>
+    </section>
+
+    <section class="booking" id="cita">
+      <div class="booking-copy">
+        <p class="eyebrow">SOLICITUD DE CITA</p>
+        <h2>Háblanos de tu coche.</h2>
+        <p>Rellena el formulario y se abrirá WhatsApp con los datos preparados para enviarlos al taller.</p>
+        <div class="booking-detail"><span>☎</span><div><strong>¿Prefieres llamar?</strong><a href="tel:+34687372411">+34 687 372 411</a></div></div>
+        <div class="booking-detail"><span class="map-icon" aria-hidden="true"><svg viewBox="0 0 24 24" role="img" aria-label="Mapa"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3 5 4-2 5 2 5-2 4 2v13l-4 2-5-2-5 2-4-2Z" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".6"/></svg></span><div><strong>¿Cómo llegar?</strong><a href="https://maps.app.goo.gl/tAKYMumxyXHmTBmH8" target="_blank" rel="noopener">Abrir Google Maps ↗</a></div></div>
+        <div class="booking-detail"><span>⌁</span><div><strong>La cita no queda confirmada automáticamente</strong><small>El taller contactará contigo para confirmar fecha y hora.</small></div></div>
+      </div>
+      <form id="appointmentForm" class="appointment-form">
+        <div class="form-title"><span>01 / TU CONTACTO</span><h3>Datos del cliente</h3></div>
+        <div class="field-grid">
+          <label>Nombre y apellidos <input name="nombre" autocomplete="name" required placeholder="Tu nombre"></label>
+          <label>Teléfono de contacto <input name="telefono" type="tel" autocomplete="tel" required placeholder="Tu teléfono"></label>
+        </div>
+        <div class="form-title"><span>02 / TU VEHÍCULO</span><h3>¿Qué coche tienes?</h3></div>
+        <div class="field-grid">
+          <label>Marca <input name="marca" required placeholder="Ej. SEAT"></label>
+          <label>Modelo <input name="modelo" required placeholder="Ej. León"></label>
+          <label>Año (opcional) <input name="anio" inputmode="numeric" pattern="[0-9]{4}" placeholder="Ej. 2018"></label>
+        </div>
+        <label>¿Qué problema presenta el coche? <textarea name="problema" rows="5" required placeholder="Describe los síntomas, cuándo ocurre, si aparece algún testigo..."></textarea></label>
+        <label class="consent"><input type="checkbox" required> He revisado los datos y acepto enviarlos al taller por WhatsApp para gestionar mi solicitud de cita.</label>
+        <button class="button button-dark submit-button" type="submit">Preparar solicitud por WhatsApp <span>↗</span></button>
+        <p class="form-feedback" id="formFeedback" aria-live="polite">Se abrirá WhatsApp para que revises y envíes el mensaje.</p>
+      </form>
+    </section>
+
+    <section class="hours section-wrap" id="horario">
+      <div><p class="eyebrow">VEN A VERNOS</p><h2>Horario y ubicación</h2><p>Consulta la ubicación en Google Maps antes de salir.</p>
+        <a class="button button-light" href="https://maps.app.goo.gl/tAKYMumxyXHmTBmH8" target="_blank" rel="noopener">Abrir Google Maps ↗</a>
+      </div>
+      <div class="hours-card">
+        <div><span>Lunes–viernes</span><strong>10:00–20:00</strong></div>
+        <div><span>Sábado</span><strong>11:00–15:00</strong></div>
+        <div><span>Domingo</span><strong class="closed">Cerrado</strong></div>
+        <a href="tel:+34687372411">+34 687 372 411</a>
+        <small>La dirección exacta se añadirá cuando esté disponible.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="footer-brand" href="#inicio">2F MOTORS</a><span>Taller mecánico · Contacto y solicitudes de cita</span><a href="tel:+34687372411">+34 687 372 411</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
